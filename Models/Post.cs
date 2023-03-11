@@ -22,7 +22,7 @@ namespace KickOff.Models
         public int AuthorId { get; set; }
 
         [ForeignKey("AuthorId")]
-        public Author Author { get; set; }
+        public virtual Author Author { get; set; }
 
         [Required]
         public bool IsDraft { get; set; }
